@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto fw-bold">
                 <li class="nav-item"><a href="#landing" class="nav-link text-dark">Hlavní stránka</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link text-dark">Produkty</a></li>
+                <li class="nav-item"><a href="#produkty" class="nav-link text-dark">Produkty</a></li>
             </ul>
         </div>
     </div>
@@ -39,52 +39,57 @@
                     klidném prostředí, ideálním pro relaxaci i práci.</p>
             </div>
             <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
-                <a href="#about" class="btn bg-light btn-lg w-50 text-dark mb-2">O nás</a>
-                <a href="#services" class="btn bg-light btn-lg w-50 text-dark">Nabídka služeb</a>
+                <a href="#O nás" class="btn bg-light btn-lg w-50 text-dark mb-2">O nás</a>
+                <a href="#produkty" class="btn bg-light btn-lg w-50 text-dark">Nabídka produktů</a>
             </div>
         </div>
     </div>
 </header>
 
 <section class="container mt-5" id="O nás">
-    <div class="row">
-        <!-- Karta s textem -->
-        <div class="col-md-6 mb-5">
-            <div class="card shadow-lg rounded-4 py-4 d-flex"
-                 style="transition: transform 0.3s ease; transform: scale(1); height: 100%;"
-                 onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#f8f9fa';"
+            <div style="transition: transform 0.3s ease; transform: scale(1); height: 100%;"
+                 onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#light';"
                  onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='white';">
-                <div class="card-body">
-                    <h1 class="card-title fw-bold">O nás</h1>
-                    <p class="card-text">Vítejte v <strong>Caffinity</strong>, místě, kde se snoubí vůně čerstvě pražené kávy s pohodovou atmosférou. Naším cílem je nabídnout vám nejen kvalitní kávové speciality, ale také prostor, kde si můžete odpočinout, setkat se s přáteli nebo v klidu pracovat Používáme pouze pečlivě vybraná kávová zrna z těch nejlepších plantáží po celém světě, která naši baristé s láskou připravují tak, aby každý šálek byl skutečným zážitkem. Kromě tradičního espressa či cappuccina u nás najdete i alternativní metody přípravy, jako je V60, chemex nebo aeropress.
+                <div class="card-body text-center">
+                    <h2 class="fw-bold">O nás</h2>
+                    <p>Vítejte v Caffinity, místě, kde se snoubí vůně čerstvě pražené kávy s pohodovou atmosférou. Naším cílem je nabídnout vám nejen kvalitní kávové speciality, ale také prostor, kde si můžete odpočinout, setkat se s přáteli nebo v klidu pracovat Používáme pouze pečlivě vybraná kávová zrna z těch nejlepších plantáží po celém světě, která naši baristé s láskou připravují tak, aby každý šálek byl skutečným zážitkem. Kromě tradičního espressa či cappuccina u nás najdete i alternativní metody přípravy, jako je V60, chemex nebo aeropress.
 
                         Káva ale není to jediné, co vám chceme nabídnout. V našem menu najdete také domácí dezerty, čerstvé pečivo a zdravé svačiny, které skvěle doplní váš kávový zážitek.
 
                         Přijďte si k nám užít chvíli klidu, obklopeni příjemným prostředím a lidmi, kteří milují kávu stejně jako vy. Caffinity – místo, kde každý šálek vypráví svůj příběh.</p>
                 </div>
             </div>
-        </div>
+</section>
 
-        <!-- Karta s obrázkem -->
-        <div class="col-md-6 mb-5">
-            <div class="card shadow-lg rounded-4 py-4 d-flex position-relative"
-                 style="transition: transform 0.3s ease; transform: scale(1); height: 100%; overflow: hidden;"
-                 onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#f8f9fa';"
-                 onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='white';">
-                <div class="card-body p-0 d-flex align-items-stretch position-relative" style="height: 100%;">
-                    <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=2084&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                         alt="obrázek"
-                         class="img-fluid"
-                         style="object-fit: cover; width: 150%; height: 120%; position: absolute; top: 0; left: 0;">
+<section id="produkty" class="py-5 ">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">Nabídka produktů</h2>
+        <div class="col-md-4" style="transition: transform 0.3s ease; transform: scale(1); height: 100%; overflow: hidden;"
+             onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#f8f9fa';"
+             onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='white';">
+            <div class="card shadow-lg">
+                <div class="card-header bg-success text-light fw-bold">
+                    <h3 class="py-4">Brazilská káva</h3>
+                </div>
+                <div class="card-body">
+                    <img src="https://www.kroger.com/product/images/large/left/0076211129355" alt="Brazilská káva" class="img-fluid w-auto">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <p class="text-black text-start mb-0 fw-bold">600 Kč</p>
+                        <a href="#" class="btn btn-success">Koupit</a>
+                    </div>
+                    <p class="py-2">
+                        <a href="#brazilKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+                    </p>
+                    <div class="collapse" id="brazilKava">
+                        <div class="p-3">
+                            <p>Brazilská káva je jemná a vyvážená s nádechem oříšků a karamelu. Pochází z největších kávových plantáží a je ideální pro přípravu espressa nebo alternativní metody.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-
-
 
 
 

@@ -21,6 +21,7 @@
                 <li class="nav-item"><a href="#" class="nav-link">Domů</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">O nás</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Přihlásit se</a></li>
             </ul>
         </div>
     </div>
@@ -30,7 +31,7 @@
     <div class="container text-center text-light py-5">
         <h1>Nadpis</h1>
         <p class="lead">Vítejte na této stánce</p>
-        <a href="#" class="btn btn-primary btn-lg">Zjistit více</a>
+        <a href="#" class="btn bg-white btn-lg text-primary">Zjistit více</a>
     </div>
 </header>
 
@@ -164,8 +165,39 @@
     &copy;Matěj Žitný
 </footer>
 
+<div class="modal" id="loginModal" >
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Nadpis modální okna</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form novalidate>
+                    <div class="my-2">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input id="email" type="email" class="form-control" placeholder="Zadejte email">
+                    </div>
+                    <div class="my-2">
+                        <label for="password" class="form-label>">Heslo:</label>
+                        <input id="password" type="password" class="form-control" placeholder="Zadejte heslo">
+                    </div>
+
+                    <div class="my-2">
+                        <input type="checkbox" class="form-check-input" name="stay id=stay">
+                        <label class="form-check-label">Zapamatovat si mě</label>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-info">Přihlasit se</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
