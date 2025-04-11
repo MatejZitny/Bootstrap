@@ -5,27 +5,30 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap</title>
+    <title>Caffinity</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.scss">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <i class="bi bi-cup-hot fs-1"></i>
+        <a href="#O-nas" style="color: black;">
+            <i class="bi bi-cup-hot fs-1 cart"></i>
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto fw-bold">
+            <ul class="navbar-nav ms-auto text-black">
                 <li class="nav-item"><a href="#landing" class="nav-link text-dark">Hlavní stránka</a></li>
                 <li class="nav-item"><a href="#produkty" class="nav-link text-dark">Produkty</a></li>
+                <li class="nav-item"><a href="#O-nas" class="nav-link text-dark">O nás</a></li>
+                <li class="nav-item"><a href="#formular" class="nav-link text-dark">Přihlásit se</a></li>
             </ul>
         </div>
     </div>
 </nav>
-
 
 <header id="landing" class="position-relative" style="background-image:url('https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-position: center; background-size: cover; height: 60vh;">
     <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.4); z-index: 1;"></div>
@@ -35,64 +38,331 @@
             <div class="col-12 col-md-6 text-center text-md-start">
                 <h1 class="text-shadow fw-bold" style="font-size: 5rem;">Caffinity</h1>
                 <p class="fw-bold" style="font-size: 1rem;">Nabízí kvalitní kávu v příjemné atmosféře.<br>
-                    Užijte si espresso, latte nebo cappuccino v<br>
-                    klidném prostředí, ideálním pro relaxaci i práci.</p>
+                    Nabízíme výběrovou kávu z celého světa.<br>
+                    Objevte chutě Etiopie, Kolumbie či Panamy  <br>
+                    v klidném prostředí naší prodejny – ideálním <br>
+                    místě pro výběr kávy na doma i jako dárek.</p>
             </div>
             <div class="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end">
-                <a href="#O nás" class="btn bg-light btn-lg w-50 text-dark mb-2">O nás</a>
-                <a href="#produkty" class="btn bg-light btn-lg w-50 text-dark">Nabídka produktů</a>
+                <a href="#O-nas" class="btn bg-light btn-lg w-50 text-dark mb-2 rounded-5">O nás</a>
+                <a href="#produkty" class="btn bg-light btn-lg w-50 text-dark rounded-5">Nabídka produktů</a>
             </div>
         </div>
     </div>
 </header>
 
-<section class="container mt-5" id="O nás">
-            <div style="transition: transform 0.3s ease; transform: scale(1); height: 100%;"
-                 onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#light';"
-                 onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='white';">
-                <div class="card-body text-center">
-                    <h2 class="fw-bold">O nás</h2>
-                    <p>Vítejte v Caffinity, místě, kde se snoubí vůně čerstvě pražené kávy s pohodovou atmosférou. Naším cílem je nabídnout vám nejen kvalitní kávové speciality, ale také prostor, kde si můžete odpočinout, setkat se s přáteli nebo v klidu pracovat Používáme pouze pečlivě vybraná kávová zrna z těch nejlepších plantáží po celém světě, která naši baristé s láskou připravují tak, aby každý šálek byl skutečným zážitkem. Kromě tradičního espressa či cappuccina u nás najdete i alternativní metody přípravy, jako je V60, chemex nebo aeropress.
+<section style="background-color:#FAF3E0" class="py-5">
+    <div class="container bg-light py-5 p-5 rounded-5 shadow" id="O-nas">
+        <div class="p-4 shadow rounded-5" style="transition: transform 0.3s ease; transform: scale(1); background-color: white;"
+             onmouseover="this.style.transform='scale(1.02)';"
+             onmouseout="this.style.transform='scale(1)';">
 
-                        Káva ale není to jediné, co vám chceme nabídnout. V našem menu najdete také domácí dezerty, čerstvé pečivo a zdravé svačiny, které skvěle doplní váš kávový zážitek.
+            <div class="card-body text-start ">
+                <h2 class="fw-bold mb-4" style="color:  #3E2723">☕ O nás</h2>
 
-                        Přijďte si k nám užít chvíli klidu, obklopeni příjemným prostředím a lidmi, kteří milují kávu stejně jako vy. Caffinity – místo, kde každý šálek vypráví svůj příběh.</p>
-                </div>
+                <p>
+                    <strong>Caffinity</strong> je místem, kde se spojuje vášeň pro kávu s objevováním chutí z celého světa. Naším cílem je nabídnout pečlivě vybrané kávy z nejlepších pěstitelských oblastí a vytvořit prostor, kde si každý milovník kávy přijde na své.
+                </p>
+
+                <p>
+                    Specializujeme se na prodej výběrových kávových zrn z různých koutů světa – od Etiopie přes Kolumbii až po Panamu. Rádi vám pomůžeme s výběrem i doporučíme vhodnou přípravu podle vaší chuti a vybavení.
+                </p>
+
+                <p>
+                    V naší nabídce najdete také kávové příslušenství, dárkové balíčky a sezónní speciality. To vše v moderním a přívětivém prostředí, ideálním pro výběr dárku nebo vlastní kávové zásoby.
+                </p>
+
+                <ul class="list-unstyled mt-4">
+                    <li class="mb-2"><i class="fas fa-coffee me-2 text-brown"></i>Výběrová kávová zrna z celého světa</li>
+                    <li class="mb-2"><i class="fas fa-box-open me-2 text-brown"></i>Dárková balení a sezónní edice</li>
+                    <li class="mb-2"><i class="fas fa-mug-hot me-2 text-brown"></i>Příslušenství pro domácí přípravu kávy</li>
+                    <li class="mb-2"><i class="fas fa-hand-holding-heart me-2 text-brown"></i>Individuální poradenství a osobní přístup</li>
+                </ul>
+
+                <p class="mt-4 fst-italic">
+                    Caffinity – místo, kde každý původ kávy vypráví svůj příběh.
+                </p>
+
             </div>
+        </div>
+    </div>
 </section>
 
-<section id="produkty" class="py-5 ">
+
+
+
+
+<section id="produkty" class="py-5" style="background-color: #FAF3E0;">
     <div class="container text-center">
-        <h2 class="fw-bold mb-4">Nabídka produktů</h2>
-        <div class="col-md-4" style="transition: transform 0.3s ease; transform: scale(1); height: 100%; overflow: hidden;"
-             onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#f8f9fa';"
-             onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='white';">
-            <div class="card shadow-lg">
-                <div class="card-header bg-success text-light fw-bold">
-                    <h3 class="py-4">Brazilská káva</h3>
-                </div>
-                <div class="card-body">
-                    <img src="https://www.kroger.com/product/images/large/left/0076211129355" alt="Brazilská káva" class="img-fluid w-auto">
-                    <div class="d-flex justify-content-between align-items-center mt-3">
-                        <p class="text-black text-start mb-0 fw-bold">600 Kč</p>
-                        <a href="#" class="btn btn-success">Koupit</a>
+        <h2 class="fw-bold mb-4 py-5" style="color: #3E2723;">Nabídka produktů</h2>
+        <div class="row">
+
+            <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+                 onmouseover="this.style.transform='scale(1.05)';"
+                 onmouseout="this.style.transform='scale(1)';">
+                <div class="card shadow-lg rounded-5">
+                    <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+                        <h3 class="py-4">Brazilská káva</h3>
                     </div>
-                    <p class="py-2">
-                        <a href="#brazilKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
-                    </p>
-                    <div class="collapse" id="brazilKava">
-                        <div class="p-3">
-                            <p>Brazilská káva je jemná a vyvážená s nádechem oříšků a karamelu. Pochází z největších kávových plantáží a je ideální pro přípravu espressa nebo alternativní metody.</p>
+                    <div class="card-body">
+                        <img src="Obtázky/_vyr_321_Brasil-Silvestre-Kava-Monro.webp" alt="Brazilská káva" class="img-fluid w-50">
+
+                        <hr class="my-4" style="border-top: 2px solid #3E2723;">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <p class="text-black text-start fw-bold">270 Kč</p>
+                            <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                               onclick="openProductModal('Brazilská káva', 'Brazilská káva je jemná a vyvážená s tóny oříšků a kakaa, ideální pro přípravu espressa.', '270 Kč', 'Obtázky/_vyr_321_Brasil-Silvestre-Kava-Monro.webp')">Koupit</a>
+                        </div>
+                        <div class="text-start mt-0">
+                            <img src="Obtázky/Flag_of_Brazil.svg.png" height="auto" width="40" alt="Brazil"/>
+                        </div>
+                        <p class="py-2">
+                            <a href="#brazilkava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+                        </p>
+                        <div class="collapse" id="brazilkava">
+                            <div class="p-3">
+                                <p>Brazilská káva je jemná a vyvážená s tóny oříšků a kakaa, ideální pro přípravu espressa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+                 onmouseover="this.style.transform='scale(1.05)';"
+                 onmouseout="this.style.transform='scale(1)';">
+                <div class="card shadow-lg rounded-5">
+                    <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+                        <h3 class="py-4">Kolumbijská káva</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="Obtázky/1598897388Colombia exc web.webp" alt="Kolumbijská káva" class="img-fluid w-50">
+
+                        <hr class="my-4" style="border-top: 2px solid #3E2723;">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <p class="text-black text-start fw-bold">250 Kč</p>
+                            <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                               onclick="openProductModal('Kolumbijská káva', 'Kolumbijská káva je bohatá a vyvážená s nádechem čokolády a ovoce, ideální pro přípravu espressa.', '250 Kč', 'Obtázky/1598897388Colombia exc web.webp')">Koupit</a>
+                        </div>
+                        <div class="text-start mt-0">
+                            <img src="Obtázky/kolumbie.jpg" height="auto" width="40" alt="kolumbie"/>
+                        </div>
+                        <p class="py-2">
+                            <a href="#kolumbijskaKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+                        </p>
+                        <div class="collapse" id="kolumbijskaKava">
+                            <div class="p-3">
+                                <p>Kolumbijská káva je bohatá a vyvážená s nádechem čokolády a ovoce, ideální pro přípravu espressa.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+                 onmouseover="this.style.transform='scale(1.05)';"
+                 onmouseout="this.style.transform='scale(1)';">
+                <div class="card shadow-lg rounded-5">
+                    <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+                        <h3 class="py-4">Etiopská káva</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="Obtázky/_vyr_379_Ethiopia-shantawene-Kava-Monro.webp" alt="Kolumbijská káva" class="img-fluid w-50">
+                        <hr class="my-4" style="border-top: 2px solid #3E2723;">
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <p class="text-black text-start fw-bold">300 Kč</p>
+                            <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                               onclick="openProductModal('Etiopská káva', 'Etiopská káva je aromatická a ovocná s květinovými tóny, ideální pro milovníky filtrované kávy i espressa.', '300 Kč', 'Obtázky/_vyr_379_Ethiopia-shantawene-Kava-Monro.webp')">Koupit</a>
+                        </div>
+                        <div class="text-start mt-0">
+                            <img src="Obtázky/etiopie.jpg" height="auto" width="40" alt="etiopie"/>
+                        </div>
+                        <p class="py-2">
+                            <a href="#etiopskákáva" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+                        </p>
+                        <div class="collapse" id="etiopskákáva">
+                            <div class="p-3">
+                                <p>Etiopská káva je aromatická a ovocná s květinovými tóny, ideální pro milovníky filtrované kávy i espressa.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="text-center bg-light py-2">
+        <a href="items.html" class="btn btn-link text-black link-underline-light">Zobrazit více</a>
+    </div>
 </section>
 
 
 
+<section id="formular" style="background-color: #FAF3E0">
+    <div class="container py-5">
+        <div class="card rounded-5">
+            <div class="card-header text-center  rounded-top-5" style="background-color:#3E2723">
+                <h3 class="py-3 text-light">Přihlásit se</h3>
+            </div>
+            <div class="card-body">
+                <form novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label py-1">E-mail:</label>
+                            <input id="email" type="email" class="form-control" placeholder="Zadejte email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="jmeno" class="form-label py-1">Jméno:</label>
+                            <input id="jmeno" type="text" class="form-control" placeholder="Zadejte celé jméno">
+                        </div>
+                    </div>
+
+                    <div class="my-3">
+                        <label for="password" class="form-label">Heslo:</label>
+                        <input id="password" type="password" class="form-control" placeholder="Zadejte heslo">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="text area" class="form-label">Prostor pro text</label>
+                        <textarea class="form-control" placeholder="Napište" id="text area" rows="1"></textarea>
+                    </div>
+
+                    <div class="my-2 form-check">
+                        <input type="checkbox" class="form-check-input" id="stay">
+                        <label class="form-check-label" for="stay">Zapamatovat si mě</label>
+                    </div>
+
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn text-light rounded-5" style="background-color:#3E2723">Přihlásit se</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="background-color: #3E2723;">
+    <div class="container py-4">
+        <div class="text-center mb-3">
+            <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#faqAndSections" aria-expanded="false" aria-controls="faqAndSections">
+                Zobrazit více
+            </button>
+        </div>
+
+        <div class="collapse" id="faqAndSections">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h5 class="mb-4 text-white">Sekce</h5>
+                    <ul class="list-unstyled text-white">
+                        <li class="nav-item mb-3"><a href="#landing" class="nav-link">Hlavní stránka</a></li>
+                        <li class="nav-item mb-3"><a href="#produkty" class="nav-link">Produkty</a></li>
+                        <li class="nav-item mb-3"><a href="#O-nas" class="nav-link">O nás</a></li>
+                        <li class="nav-item mb-3"><a href="#formular" class="nav-link">Přihlásit se</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <h5 class="mb-4 text-white">Často kladené dotazy</h5>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Jaké jsou otevírací hodiny prodejny?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Prodejna je otevřená každý den od 8:00 do 20:00.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Lze si kávu i objednat domů?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ano, nabízíme možnost online objednávky přes náš e-shop s doručením po celé ČR.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Pomůžete mi s výběrem kávy?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Rádi! Naši specialisté vám poradí s výběrem podle chuti i způsobu přípravy.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Máte dárková balení?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Ano, nabízíme různé dárkové sady – ideální jako originální dárek pro každého milovníka kávy.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4" style="border-top: 2px solid #ffffff;">
+
+        <div class="text-white d-flex justify-content-between align-items-center">
+            <span>&copy; Matěj Žitný</span>
+            <div>
+                <i class="bi bi-twitter-x fs-5 ms-3"></i>
+                <i class="bi bi-instagram fs-5 ms-3"></i>
+                <i class="bi bi-facebook fs-5 ms-3"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-5">
+            <div class="modal-header justify-content-center fw-bold rounded-top-5" style="background-color:#3E2723;">
+                <h3 class="modal-title text-center py-4 text-light w-100" id="productModalLabel">Koupit produkt</h3>
+                <button type="button" class="btn-close white-close position-absolute end-0 me-3" style="filter: invert(1);" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+            </div>
+            <div class="modal-body px-4 py-3">
+                <div class="text-center">
+                    <img id="modal-product-img" class="img-fluid mb-3" style="max-width: 200px;" src="" alt="Obrázek produktu">
+                </div>
+                <hr class="my-4" style="border-top: 2px solid #3E2723;">
+                <h5 id="modal-product-name" class="mb-3 text-center"></h5>
+                <p id="modal-product-description" class="mb-4 text-center"></p>
+
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <p id="modal-product-price" class="fs-4 fw-bold mb-0">270 Kč</p>
+                    <button type="button" class="btn btn-primary" id="add-to-cart-btn">
+                        <i class="bi bi-cart-plus"></i> Přidat do košíku
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="script.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

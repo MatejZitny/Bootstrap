@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caffinity</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Caffinity</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <i class="bi bi-cup-hot fs-1"></i>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto text-black">
+        <li class="nav-item"><a href="index.html" class="nav-link text-dark">Hlavní stránka</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link text-dark">Produkty</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link text-dark">O nás</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link text-dark">Přihlásit se</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="produkty" class="py-5" style="background-color: #FAF3E0;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4 py-5" style="color: #3E2723;">Nabídka produktů</h2>
+    <div class="row">
+
+      <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';">
+        <div class="card shadow-lg rounded-5">
+          <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+            <h3 class="py-4">Brazilská káva</h3>
+          </div>
+          <div class="card-body">
+            <img src="Obtázky/_vyr_321_Brasil-Silvestre-Kava-Monro.webp" alt="Brazilská káva" class="img-fluid w-50">
+
+            <hr class="my-4" style="border-top: 2px solid #3E2723;">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="text-black text-start fw-bold">270 Kč</p>
+              <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                 onclick="openProductModal('Brazilská káva', 'Brazilská káva je jemná a vyvážená s tóny oříšků a kakaa, ideální pro přípravu espressa.', '270 Kč', 'Obtázky/_vyr_321_Brasil-Silvestre-Kava-Monro.webp')">Koupit</a>
+            </div>
+            <div class="text-start mt-0">
+              <img src="Obtázky/Flag_of_Brazil.svg.png" height="auto" width="40" alt="Brazil"/>
+            </div>
+            <p class="py-2">
+              <a href="#brazilkava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+            </p>
+            <div class="collapse" id="brazilkava">
+              <div class="p-3">
+                <p>Brazilská káva je jemná a vyvážená s tóny oříšků a kakaa, ideální pro přípravu espressa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';">
+        <div class="card shadow-lg rounded-5">
+          <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+            <h3 class="py-4">Kolumbijská káva</h3>
+          </div>
+          <div class="card-body">
+            <img src="Obtázky/1598897388Colombia exc web.webp" alt="Kolumbijská káva" class="img-fluid w-50">
+
+            <hr class="my-4" style="border-top: 2px solid #3E2723;">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="text-black text-start fw-bold">250 Kč</p>
+              <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                 onclick="openProductModal('Kolumbijská káva', 'Kolumbijská káva je bohatá a vyvážená s nádechem čokolády a ovoce, ideální pro přípravu espressa.', '250 Kč', 'Obtázky/1598897388Colombia exc web.webp')">Koupit</a>
+            </div>
+            <div class="text-start mt-0">
+              <img src="Obtázky/kolumbie.jpg" height="auto" width="40" alt="kolumbie"/>
+            </div>
+            <p class="py-2">
+              <a href="#kolumbijskaKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+            </p>
+            <div class="collapse" id="kolumbijskaKava">
+              <div class="p-3">
+                <p>Kolumbijská káva je bohatá a vyvážená s nádechem čokolády a ovoce, ideální pro přípravu espressa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';">
+        <div class="card shadow-lg rounded-5">
+          <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+            <h3 class="py-4">Etiopská káva</h3>
+          </div>
+          <div class="card-body">
+            <img src="Obtázky/_vyr_379_Ethiopia-shantawene-Kava-Monro.webp" alt="Kolumbijská káva" class="img-fluid w-50">
+            <hr class="my-4" style="border-top: 2px solid #3E2723;">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="text-black text-start fw-bold">300 Kč</p>
+              <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                 onclick="openProductModal('Etiopská káva', 'Etiopská káva je aromatická a ovocná s květinovými tóny, ideální pro milovníky filtrované kávy i espressa.', '300 Kč', 'Obtázky/_vyr_379_Ethiopia-shantawene-Kava-Monro.webp')">Koupit</a>
+            </div>
+            <div class="text-start mt-0">
+              <img src="Obtázky/etiopie.jpg" height="auto" width="40" alt="etiopie"/>
+            </div>
+            <p class="py-2">
+              <a href="#etiopskákáva" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+            </p>
+            <div class="collapse" id="etiopskákáva">
+              <div class="p-3">
+                <p>Etiopská káva je aromatická a ovocná s květinovými tóny, ideální pro milovníky filtrované kávy i espressa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';">
+        <div class="card shadow-lg rounded-5">
+          <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+            <h3 class="py-4">Panamská káva</h3>
+          </div>
+          <div class="card-body">
+            <img src="Obtázky/_vyr_329_Panamska-kava-Arabika.png" alt="Kolumbijská káva" class="img-fluid w-50">
+            <hr class="my-4" style="border-top: 2px solid #3E2723;">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="text-black text-start  fw-bold">700 Kč</p>
+              <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                 onclick="openProductModal('Panamská káva', 'Geisha káva z Panamy je považována za jednu z nejlepších a nejdražších na světě, s květinovými a ovocnými tóny.', '700 Kč', 'Obtázky/_vyr_329_Panamska-kava-Arabika.png')">Koupit</a>
+            </div>
+            <div class="text-start mt-0">
+              <img src="Obtázky/Flag_of_Panama.svg.png" height="auto" width="40" alt="kolumbie"/>
+            </div>
+            <p class="py-2">
+              <a href="#panamskáKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+            </p>
+            <div class="collapse" id="panamskáKava">
+              <div class="p-3">
+                <p>Geisha káva z Panamy je považována za jednu z nejlepších a nejdražších na světě, s květinovými a ovocnými tóny.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';">
+        <div class="card shadow-lg rounded-5">
+          <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+            <h3 class="py-4">Jamajská káva</h3>
+          </div>
+          <div class="card-body">
+            <img  src="Obtázky/_vyr_306_Jamaica-Blue-Mountain-Kava-Monro.png" alt="Kolumbijská káva" class="img-fluid w-50">
+            <hr class="my-4" style="border-top: 2px solid #3E2723;">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="text-black text-start  fw-bold">1000 Kč</p>
+              <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                 onclick="openProductModal('Jamajská káva', 'Jedna z nejuznávanějších a nejdražších káv na světě. Jemná, vyvážená, bez silné acidity, s nádechem čokolády a ovoce.', '1000 Kč', 'Obtázky/_vyr_306_Jamaica-Blue-Mountain-Kava-Monro.png')">Koupit</a>
+            </div>
+            <div class="text-start mt-0">
+              <img src="Obtázky/Flag_of_Jamaica.svg.png" height="25" width="40" alt="kolumbie"/>
+            </div>
+            <p class="py-2">
+              <a href="#jamajskáKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+            </p>
+            <div class="collapse" id="jamajskáKava">
+              <div class="p-3">
+                <p>Jedna z nejuznávanějších a nejdražších káv na světě. Jemná, vyvážená, bez silné acidity, s nádechem čokolády a ovoce.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';">
+        <div class="card shadow-lg rounded-5">
+          <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+            <h3 class="py-4">Keňská káva</h3>
+          </div>
+          <div class="card-body">
+            <img src="Obtázky/_vyr_315_Arabika-Kenya-Mount-Selection.png" alt="Kolumbijská káva" class="img-fluid w-50">
+            <hr class="my-4" style="border-top: 2px solid #3E2723;">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="text-black text-start  fw-bold">300 Kč</p>
+              <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                 onclick="openProductModal('Keňská káva', 'Keňská káva je známá svou silnou kyselinkou, výraznými ovocnými tóny (černý rybíz, citrusy) a komplexním profilem.', '300 Kč', 'Obtázky/_vyr_315_Arabika-Kenya-Mount-Selection.png')">Koupit</a>
+            </div>
+            <div class="text-start mt-0">
+              <img src="Obtázky/Flag_of_Kenya.svg.png" height="auto" width="40" alt="kolumbie"/>
+            </div>
+            <p class="py-2">
+              <a href="#KeňskáKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+            </p>
+            <div class="collapse" id="KeňskáKava">
+              <div class="p-3">
+                <p>Keňská káva je známá svou silnou kyselinkou, výraznými ovocnými tóny (černý rybíz, citrusy) a komplexním profilem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';">
+        <div class="card shadow-lg rounded-5">
+          <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+            <h3 class="py-4">Guatemalská káva</h3>
+          </div>
+          <div class="card-body">
+            <img src="Obtázky/1598900536Guatemala.png" alt="Kolumbijská káva" class="img-fluid w-50">
+            <hr class="my-4" style="border-top: 2px solid #3E2723;">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="text-black text-start  fw-bold">300 Kč</p>
+              <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                 onclick="openProductModal('Guatemalská káva', 'Káva z oblasti Antigua je bohatá a komplexní, s nádechem čokolády, karamelu a koření. Má plné tělo a příjemnou aciditu.', '300 Kč', 'Obtázky/1598900536Guatemala.png')">Koupit</a>
+            </div>
+            <div class="text-start mt-0">
+              <img src="Obtázky/Flag_of_Guatemala.svg.png" height="auto" width="40" alt="kolumbie"/>
+            </div>
+            <p class="py-2">
+              <a href="#GuatemalskaKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+            </p>
+            <div class="collapse" id="GuatemalskaKava">
+              <div class="p-3">
+                <p>Káva z oblasti Antigua je bohatá a komplexní, s nádechem čokolády, karamelu a koření. Má plné tělo a příjemnou aciditu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';">
+        <div class="card shadow-lg rounded-5">
+          <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+            <h3 class="py-4">Jemenská káva</h3>
+          </div>
+          <div class="card-body">
+            <img src="Obtázky/_vyr_377_Yemen-Mocha-Matari-nul.png" alt="Jemenská káva" class="img-fluid w-50">
+            <hr class="my-4" style="border-top: 2px solid #3E2723;">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="text-black text-start  fw-bold">900 Kč</p>
+              <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                 onclick="openProductModal('Jemenská káva', 'Jemenská káva je historicky ceněná, s divokým, víc vrstevnatým profilem – ovocné a kořeněné tóny, čokoláda a víno.', '900 Kč', 'Obtázky/_vyr_377_Yemen-Mocha-Matari-nul.png')">Koupit</a>
+            </div>
+            <div class="text-start mt-0">
+              <img src="Obtázky/Flag_of_Yemen.svg.png" height="auto" width="40" alt="kolumbie"/>
+            </div>
+            <p class="py-2">
+              <a href="#JemenskaKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+            </p>
+            <div class="collapse" id="JemenskaKava">
+              <div class="p-3">
+                <p>Jemenská káva je historicky ceněná, s divokým, víc vrstevnatým profilem – ovocné a kořeněné tóny, čokoláda a víno.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-4 mb-4" style="transition: transform 0.3s ease; transform: scale(1);"
+           onmouseover="this.style.transform='scale(1.05)';"
+           onmouseout="this.style.transform='scale(1)';">
+        <div class="card shadow-lg rounded-5">
+          <div class="card-header text-light fw-bold rounded-top-5" style="background-color:#3E2723;">
+            <h3 class="py-4">Kostarická káva</h3>
+          </div>
+          <div class="card-body">
+            <img src="Obtázky/_vyr_369_Cascara-Sonora-Kava-Monro.png" alt="Kolumbijská káva" class="img-fluid w-50">
+            <hr class="my-4" style="border-top: 2px solid #3E2723;">
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <p class="text-black text-start  fw-bold">280 Kč</p>
+              <a href="#" class="btn text-white" style="background-color: #3E2723" data-bs-toggle="modal" data-bs-target="#productModal"
+                 onclick="openProductModal('Kostarická  káva', 'Kostarická káva je vyvážená a svěží, často s ovocnými tóny, citrusovou aciditou a jemným tělem. Skvělá pro filtrovanou kávu.', '280 Kč', 'Obtázky/_vyr_369_Cascara-Sonora-Kava-Monro.png')">Koupit</a>
+            </div>
+            <div class="text-start mt-0">
+              <img src="Obtázky/Flag_of_Costa_Rica_(state).svg.png" height="auto" width="40" alt="kolumbie"/>
+            </div>
+            <p class="py-2">
+              <a href="#KostarickaKava" data-bs-toggle="collapse" class="text-black text-decoration-none">Popis produktu</a>
+            </p>
+            <div class="collapse" id="KostarickaKava">
+              <div class="p-3">
+                <p>Kostarická káva je vyvážená a svěží, často s ovocnými tóny, citrusovou aciditou a jemným tělem. Skvělá pro filtrovanou kávu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center bg-light py-2">
+      <a href="index.html" class="btn btn-link text-black link-underline-light">Zpět na hlavní stránku</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background-color: #3E2723;">
+  <div class="container py-4">
+    <div class="text-center mb-3">
+      <button class="btn btn-outline-light btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#faqAndSections" aria-expanded="false" aria-controls="faqAndSections">
+        Zobrazit více
+      </button>
+    </div>
+
+    <div class="collapse" id="faqAndSections">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-4 text-white">Sekce</h5>
+          <ul class="list-unstyled text-white">
+            <li class="nav-item mb-3"><a href="index.html" class="nav-link">Hlavní stránka</a></li>
+            <li class="nav-item mb-3"><a href="index.html" class="nav-link">Produkty</a></li>
+            <li class="nav-item mb-3"><a href="index.html" class="nav-link">O nás</a></li>
+            <li class="nav-item mb-3"><a href="index.html" class="nav-link">Přihlásit se</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <h5 class="mb-4 text-white">Často kladené dotazy</h5>
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Jaké jsou otevírací hodiny prodejny?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Prodejna je otevřená každý den od 8:00 do 20:00.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Lze si kávu i objednat domů?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Ano, nabízíme možnost online objednávky přes náš e-shop s doručením po celé ČR.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Pomůžete mi s výběrem kávy?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Rádi! Naši specialisté vám poradí s výběrem podle chuti i způsobu přípravy.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Máte dárková balení?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Ano, nabízíme různé dárkové sady – ideální jako originální dárek pro každého milovníka kávy.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-4" style="border-top: 2px solid #ffffff;">
+
+    <div class="text-white d-flex justify-content-between align-items-center">
+      <span>&copy; Matěj Žitný</span>
+      <div>
+        <i class="bi bi-twitter-x fs-5 ms-3"></i>
+        <i class="bi bi-instagram fs-5 ms-3"></i>
+        <i class="bi bi-facebook fs-5 ms-3"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-5">
+      <div class="modal-header justify-content-center fw-bold rounded-top-5" style="background-color:#3E2723;">
+        <h3 class="modal-title text-center py-4 text-light w-100" id="productModalLabel">Koupit produkt</h3>
+        <button type="button" class="btn-close white-close position-absolute end-0 me-3" style="filter: invert(1);" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+      </div>
+      <div class="modal-body px-4 py-3">
+        <div class="text-center">
+          <img id="modal-product-img" class="img-fluid mb-3" style="max-width: 200px;" src="" alt="Obrázek produktu">
+        </div>
+        <hr class="my-4" style="border-top: 2px solid #3E2723;">
+        <h5 id="modal-product-name" class="mb-3 text-center"></h5>
+        <p id="modal-product-description" class="mb-4 text-center"></p>
+
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <p id="modal-product-price" class="fs-4 fw-bold mb-0">270 Kč</p>
+          <button type="button" class="btn btn-primary" id="add-to-cart-btn">
+            <i class="bi bi-cart-plus"></i> Přidat do košíku
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
